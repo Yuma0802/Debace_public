@@ -1,0 +1,13 @@
+Good追加処理
+  (U):Goodボタンを押す
+  ↓
+  speach(C)でそれを検知addGood(S)にそのopinionのidを記録
+  ↓
+  FBに登録
+    batch
+    ・当該opinionのgoodをインクリメント
+    ・自participantのtoGoodに当該opinionのidを追加
+    ・opinion投稿者のparticipantのgoodをインクリメント
+
+Good済みかの判定
+

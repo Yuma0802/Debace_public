@@ -1,0 +1,18 @@
+(async() => {})()
+
+useEffect(() => {},[])
+
+(() => {})()
+        
+コンポーネントテンプレート
+import React from "react";
+import styled from 'styled-components';
+
+const 〇〇 = () => {
+
+  return (
+    
+  )
+};
+
+export default 〇〇;

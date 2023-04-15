@@ -1,0 +1,18 @@
+DebatePage開く
+  ・自身のURLからIdを取得しdebateコレクションからAgenda(直下feild全て),comment(S)(1～50)を取得
+  ・ロングイン済みか否か判定
+    ・自身のuidからdebateコレクションのparticipant(S)に検索をかけ参加済みか確認 => 参加済みなら情報取得
+
+Debate参加処理（参加ボタンを押す）
+  ・自分の立場を選択
+  batch
+  ・participant(S)にその人のドキュメントを登録 => その情報をstateに保存
+  ・debate.participantt_Aをインクリメント
+
+Opinion追加処理
+  transaction
+  ・debate.opinion_sumより現在のコメント数を取得
+  ・opinion(S)に書き込み
+  ・debate.opinion_sumをインクリメント
+
+  

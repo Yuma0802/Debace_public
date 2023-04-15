@@ -1,0 +1,109 @@
+Collection users 
+id : uid
+{
+  name : string
+  rank : integer
+  exp : integer
+  url : string
+  detail : map {gender => integer,
+                  jobs => string,
+                  genalation => integer,
+                }
+  profile : string
+  make : arry [
+                [0 => agenda_title(string), 1 => url(string)]
+              ]
+  joind : arry [
+                [0 => agenda_title(string), 1 => url(string)]
+              ]
+  createedAt : timestanp
+  favorit_tag : arry [
+                        tag_name(string)
+                    ]
+  favorit_category : arry [
+                        category_name(string)
+                    ]
+
+  subcollection bookmark
+  id debate_id 
+    {
+      title : string
+      category : string
+      start_time : timestanp
+      finish_time : timestanp
+      finish : bool
+      url : string
+      host : map {name => string
+                      rank => integer
+                      url => string
+                      }
+    }
+}
+
+
+Collection debate
+id randum
+{
+  title : string
+  start_time : timestanp
+  finish_time : timestanp
+  finish : bool
+  public : bool
+  url : string
+  host : map {name => string
+                  rank => integer
+                  url => string
+                  }
+  body : string
+  reference : arry [
+                    {reference_title => string, url => string}
+                    ]
+  position : map { 
+                     A => {position_name => string, position_count => integer} 
+                     B => {position_name => string, position_count => integer} 
+                     C => {position_name => string, position_count => integer} 
+                     D => {position_name => string, position_count => integer} 
+                   }
+  tag : arry [tag_name (string)]
+  category : string
+  join_count : integer
+  opinion_count : integer
+    
+  subcollection opinion
+  id : randum
+  {
+    pid => perticipant_id
+    name => string
+    rank => integer
+    
+    position : string
+    body : string
+    good : integer
+    to_reply : integer 
+    from_reply : arry [opinion_id(integer)]
+    convert : integer
+    createdAt : timestanp
+  }
+
+  subcollection participant
+  id : randum
+  {
+    id => uid
+    name => string
+    rank => integer
+    position : string
+    good : integer
+    convert : integer
+    opinion: arry[oppinion_id]
+    createdAt : timestanp
+  }
+}
+
+
+Collection ff
+id randum
+{
+  to_follow : uid
+  from_follow : uid
+ 
+}

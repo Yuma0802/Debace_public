@@ -1,0 +1,23 @@
+Page
+  FirstPage
+  MainPage
+  MyPage
+  DebatePage
+  MakeDebatePage
+  LoginPage
+
+container
+  ShowMainContainer
+  DebateContentsContainer
+  MyProfileContainer
+  FriendContainer
+  DMContainer
+  MyTagContainer
+  ContactFormContainer
+  MySettingContainer
+
+
+Presentational
+  -organisms
+    Header
+    Footer

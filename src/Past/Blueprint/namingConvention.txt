@@ -1,0 +1,12 @@
+基本 => camelCase
+component名(styled-component含む) => CaspalCase
+
+関数名・変数名など => 基本的に英語で直訳
+
+styled-component
+・divタグ等基本的にstyleのみを整えるもの => 頭文字にS
+・ｐタグ等文字を囲むもの => 頭文字にＷ
+・タイトルに当たる者 => 頭文字にT
+・inputタグのような入力フォームの入力する部分 => 頭文字にＩ
+・imgタグ等写真 => 〇〇Imgとする
+その他特殊なタグを使う場合それとわかるように命名する
