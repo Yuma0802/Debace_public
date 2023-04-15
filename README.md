@@ -1,6 +1,6 @@
 # Debace　～議論・討論専用のSNS～
 
-![Introduction]()
+![Introduction](https://user-images.githubusercontent.com/71355267/232234016-160526a1-03f7-4246-9c90-cac2acec8b22.png)
 
 ## アプリ概要
 ### 製作背景
@@ -19,7 +19,7 @@
 
 
 ### 使い方
-![demo]()
+説明スライド：https://docs.google.com/presentation/d/1pIThGdeiB5qt2NHfGWlGMHytSu7XCSs-/edit?usp=sharing&ouid=101281306729449583418&rtpof=true&sd=true
 
   
 リンク：https://debace.net/
